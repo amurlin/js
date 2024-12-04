@@ -205,28 +205,143 @@
 // }
 
 // 6. Urjver 5
+// let too1= 3;
+// let too2= 6;
+// let too3= 2;
+// let too4= 4;
 
-let too1= 3;
-let too2= 6;
-let too3= 2;
-let too4= 4;
+// if (too1<5){
+//     if (too2<5)
+//         console.log(too1*too2);
+//     if (too3<5)
+//         console.log(too1*too3);
+//     if (too4<5)
+//         console.log(too1*too4);           
+// }
+// if (too2<5) {
+//     if (too3< 5)
+//         console.log(too2*too3);
+//     if (too4<5)
+//         console.log(too2*too4); 
+// }
+// if (too3<5) {
+//     if (too4<5)
+//         console.log(too3*too4);
+// }
 
-if (too1<5){
-    if (too2<5)
-        console.log(too1*too2);
-    if (too3<5)
-        console.log(too1*too3);
-    if (too4<5)
-        console.log(too1*too4);           
-}
-if (too2<5) {
-    if (too3< 5)
-        console.log(too2*too3);
-    if (too4<5)
-        console.log(too2*too4); 
-}
-if (too3<5) {
-    if (too4<5)
-        console.log(too3*too4);
-}
+// tentsuu 5
+// let too1 = 1;
+// let too2 = 5;
+// let too3 = 5;
+// let TavtaiTesntsuuToo;
+
+// if(too1==5){
+//     if(too2==5){
+//         if(too3==5){
+//             TavtaiTesntsuuToo='3'
+//         }
+//         if(too3!=5){
+//            TavtaiTesntsuuToo='2'
+//         }
+//     }
+//     if(too2!=5){
+//         if(too3==5){
+//             TavtaiTesntsuuToo='2'
+//         }
+//         if(too3!=5){
+//             TavtaiTesntsuuToo='1'
+//         }
+//     }
+// }
+// else if(too1!=5){
+//     if(too2==5){
+//         if(too3==5){
+//             TavtaiTesntsuuToo='2'
+//         }
+//         if(too3!=5){
+//            TavtaiTesntsuuToo='1'
+//         }
+//     }
+//     if(too2!=5){
+//         if(too3==5){
+//             TavtaiTesntsuuToo='1'
+//         }
+//         if(too3!=5){
+//             TavtaiTesntsuuToo='0'
+//         }
+//     }
+// }
+// console.log(TavtaiTesntsuuToo);
+
+// 10-aas ih
+// let too = 11;
+// if(too>10){
+//     console.log("yes");
+// }
+// else{
+//     console.log("no");
+// }
+
+// tegsh toonuud yes
+// let too = [3, 4, 5]
+
+
+// for(let i = 0; i< too.length; i++){
+//     if(too[i]%2==0){
+//         console.log("yes"); 
+//      }
+//      else {
+//         console.log("no");
+        
+//      }
+// }
+
+// ioi 3 udaa
+// for(let i = 0; i<3; i++) {
+//     console.log('ioi');
+// }
+
+// ioi n udaa
+// let n=6;
+// for(let i = 0; i<n; i++){
+//     console.log('ioi');
+// }
+
+// ehnii  n toonii niilber
+// let n= 9;
+// let niilber=0;
+// for(let i=1; i<=n; i++){
+//     niilber = niilber + i
+// }
+//     console.log(niilber, "niilber");
+
+// n!
+// let n = 5;
+// let too = 1;
+
+// for (let i = 1; i <= n; i++) {
+//     too = i * too
+// }
+// console.log(too);
+
+// 100-g n udaa nem
+// let n = 6;
+// let too = 100;
+// let niilber;
+// for (let i = 1; i <= n; i++) {
+//     niilber = too * i
+// }
+// console.log(niilber);
+
+// a toog n udaa nem
+// let n = 6;
+// let too = 50;
+// let niilber;
+// for (let i = 1; i <= n; i++) {
+//     niilber = too * i
+// }
+// console.log(niilber);
+
+// 2-iin zereg
+ 
 

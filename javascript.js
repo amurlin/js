@@ -472,18 +472,85 @@
 // console.log(A);
 
 // "Additional problems -- from Teams"
-let input = "23453 3"
-let inputArray = input.split(" ");   // ["23453", "3"]
-let ehniiToo = inputArray[0]  // "23453"    =>   [2, 3, 4, 5, 3]
-let tsifr = inputArray[1]; // "3"
+// 1.
+// let input = "23453 3"
+// let inputArray = input.split(" ");   // ["23453", "3"]
+// let ehniiToo = inputArray[0]  // "23453"    =>   [2, 3, 4, 5, 3]
+// let tsifr = inputArray[1]; // "3"
 
-// let ehniiTooniiEhniiTsifr = ehniiToo[0]   // "2"
+// // let ehniiTooniiEhniiTsifr = ehniiToo[0]   // "2"
 
-let hedenShirheg = 0;
-for (let i= 0; i< ehniiToo.length; i++) {
-   if( ehniiToo[i] == tsifr) hedenShirheg=hedenShirheg+1
+// let hedenShirheg = 0;
+// for (let i= 0; i< ehniiToo.length; i++) {
+//    if( ehniiToo[i] == tsifr) hedenShirheg=hedenShirheg+1
+// }
+// console.log(hedenShirheg);
+
+// 2.
+let NaturalToo = "16 24";
+let TooArray = NaturalToo.split(" "); 
+let too1 = TooArray[0];
+let too2 = TooArray[1];
+
+//"// let HIYH;
+// let x;
+// let y;
+
+// for (let  i = 1;  i <= too1;  i++) {
+//    x = too1/i;
+//    if (x % 1 == 0){
+//       console.log(x);
+//    }
+// }
+// for (let  i = 1;  i <= too2;  i++) {
+//    y = too2/i;
+//    if (y % 1 == 0) {
+//       console.log(y);
+//    }
+// }
+// for (let i= 0; i< x.length; i++) {
+//    for (let i= 0; i< y.length; i++) {
+//       if( x[i] == y[i]){
+//          HIYH= x[i] * y[i]
+//          console.log(HIYH);
+//       }
+//    }
+// }"
+
+let minToo = too1 > too2 ? too2 : too1   // ternary
+let hiyh=1;
+
+for ( let i = 1; i<minToo; i++ ){
+   
+   if ( too1 % i == 0 && too2 % i == 0){
+      if (i > hiyh) {
+         hiyh=i 
+      }
+   }
 }
-console.log(hedenShirheg);
+console.log(hiyh);
+
+// 4.
+// let too= [12321];
+
+// for (let i = 0; i < too.length; i++) {
+//    if (i) {
+//       ;
+//    }
+// }
+// console.log(14%3, 14/3);
+
+// 6.
+// let k = 4;
+// let NegShagainiiBuuhBolomj = 4;
+// let bolomj;
+
+// for (let i = 1; i <= k; i++) {
+//    bolomj = NegShagainiiBuuhBolomj * i;
+//    console.log(bolomj);
+// }
+
+
 
 
 

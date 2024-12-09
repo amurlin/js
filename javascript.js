@@ -1,30 +1,74 @@
-// 12.03  --- Conditions ---
+// 12.03  ---
 
 // "Гурвалжин";
-// let a = 4, b = 3, c = 5
-// console.log(a+b+c)
+// function perimeter(a, b, c) {
+//    let perimeter = a + b + c;
+//    return perimeter;
+// }
+// let a = Number(prompt("a too")), b = Number(prompt("b too")), c = Number(prompt("c too"));
+// let hariu = perimeter(a, b, c)
+// console.log(hariu);
 
 // "Хоёр тооны нийлбэр";
-// let d = 12, e =23
-// console.log(d+e)
+// function niilber(too1, too2){
+//    let niilber = too1 + too2;
+//    return niilber;
+// }
+// let too1 = Number(prompt('too1')), too2 = Number(prompt('too2'));
+// let hariu = niilber(too1, too2);
+// console.log(hariu);
 
 // "Куб";
-// let f = 5
-// console.log(f*f*f, f*f*6)
+// function talbai(negTaliinUrt) {
+//    let talbai = (negTaliinUrt * negTaliinUrt) * 6
+//    return talbai;
+// }
+// function ezelhuun(negTaliinUrt) {
+//    let ezelhuun = negTaliinUrt * negTaliinUrt * negTaliinUrt
+//    return ezelhuun;
+// // }
+// let negTaliinUrt = Number(prompt(""))
+// let hariu1 = talbai(negTaliinUrt);
+// let hariu2 = ezelhuun(negTaliinUrt);
+// console.log(hariu1, hariu2);
 
 // "Тэгш өнцөгт";
-// let g = 6, h=4
-// console.log(g*h, g*2+h*2)
+// function talbai(a, b) {
+//    let talbai = a * b;
+//    return talbai;
+// }
+// function perimeter(a, b) {
+//    let perimeter = (a+b)*2;
+//    return perimeter;
+// }
+// let a= Number(prompt("")), b = Number(prompt(''));
+// let hariu1 = talbai(a, b);
+// let hariu2 = perimeter(a, b);
+// console.log(hariu1, hariu2);
 
 // "Функц 1";
-// let x= 1
-// console.log(y=3*x-5)
+// function tal(x) {
+//    let f = 3 * x - 5;
+//    return f;
+// }
+// let x = Number(prompt(''));
+// let hariu = tal(x);
+// console.log(hariu);
 
 // "Функц 2";
-// let j= -2
-// console.log(k=4*j*j-3*j+5)
+// function tal(x) {
+//    let f = 4 * x ** 2 - 3 * x + 5;
+//    return f;
+// }
+// let x = Number(prompt(''));
+// let hariu = tal(x);
+// console.log(hariu);
 
 // "Сүүлийн цифр";
+// function too(params) {
+// let arr =[prompt('')]
+// let index = [-1]
+// }
 // let l= 476
 // console.log(l%10)
 
@@ -39,12 +83,12 @@
 // let m= w%10
 // console.log(z*m)
 
-// "3 оронтой тоо";
-// let ons= 123
-// let o= Math.floor(ons/100)
-// let n= (ons%100-3)/10
-// let s= ons%10
-// console.log(o+n+s)
+"3 оронтой тоо";
+let ons= 556
+let o= Math.floor(ons/100)
+let n= (ons%100-3)/10
+let s= ons%10
+console.log(o+n+s)
 
 // "Минут секунд";
 // let sec= 200
@@ -487,48 +531,23 @@
 // console.log(hedenShirheg);
 
 // 2.
-let NaturalToo = "16 24";
-let TooArray = NaturalToo.split(" "); 
-let too1 = TooArray[0];
-let too2 = TooArray[1];
+// let NaturalToo = "16 24";
+// let TooArray = NaturalToo.split(" "); 
+// let too1 = TooArray[0];
+// let too2 = TooArray[1];
 
-//"// let HIYH;
-// let x;
-// let y;
+// let minToo = too1 > too2 ? too2 : too1   // ternary
+// let hiyh=1;
 
-// for (let  i = 1;  i <= too1;  i++) {
-//    x = too1/i;
-//    if (x % 1 == 0){
-//       console.log(x);
-//    }
-// }
-// for (let  i = 1;  i <= too2;  i++) {
-//    y = too2/i;
-//    if (y % 1 == 0) {
-//       console.log(y);
-//    }
-// }
-// for (let i= 0; i< x.length; i++) {
-//    for (let i= 0; i< y.length; i++) {
-//       if( x[i] == y[i]){
-//          HIYH= x[i] * y[i]
-//          console.log(HIYH);
+// for ( let i = 1; i<minToo; i++ ){
+   
+//    if ( too1 % i == 0 && too2 % i == 0){
+//       if (i > hiyh) {
+//          hiyh=i 
 //       }
 //    }
-// }"
-
-let minToo = too1 > too2 ? too2 : too1   // ternary
-let hiyh=1;
-
-for ( let i = 1; i<minToo; i++ ){
-   
-   if ( too1 % i == 0 && too2 % i == 0){
-      if (i > hiyh) {
-         hiyh=i 
-      }
-   }
-}
-console.log(hiyh);
+// }
+// console.log(hiyh);
 
 // 4.
 // let too= [12321];
@@ -550,9 +569,9 @@ console.log(hiyh);
 //    console.log(bolomj);
 // }
 
-
-
-
-
+// ----- 12.09 ----- 
+// 1. Davhriin  hed dahi haalga
+// let davharHaalganiiToo = "5 4";
+// let HaalganiiToot = 10;
 
 

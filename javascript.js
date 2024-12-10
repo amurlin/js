@@ -65,35 +65,40 @@
 // console.log(hariu);
 
 // "Сүүлийн цифр";
-// function too(params) {
-// let arr =[prompt('')]
-// let index = [-1]
+// function findLastDigit(num) {
+//    let lastDigit = num % 10
+//    return lastDigit;
 // }
-// let l= 476
-// console.log(l%10)
+// let hariu = findLastDigit(476);
+// console.log(hariu)
 
-// "Аравтын орны цифр"; ???
-// let p= 423
-// let i= p%100-3
-// console.log(i/10)
+// "Аравтын орны цифр";
+// function findLastDigit(num) {
+//    let lastDigit = (num % 100 -num % 10)/10
+//    return lastDigit;
+// }
+// let hariu = findLastDigit(423);
+// console.log(hariu)
 
 // "2 оронтой тоо";
-// function too(x) {
-//     let urjver = x[0] * x[1];
-//     return urjver;
+// function multiplyDigits(number) {
+//     let product = 1;
+//     const digits = number.toString().split('');
+//     digits.forEach(digit => {product = product * parseInt(digit, 10)}); // parseInt ni stringiig too bolgon huvirgadag. (tsifer buriig 10tiin ornii too bolgoj bainaa gsn ug)
+//     return product; 
 // }
-// let hariu = too("27");
-// console.log(hariu);
+// console.log(multiplyDigits(27));
 
 // "3 оронтой тоо"; 
-// function GurvanOrontoiToo(x) {
-//     let niilber = x[0] + x[1] + x[2];
-//     return niilber;
+// function sumOfDigits(number) {
+//     let sum = 0;
+//     const digits = number.toString().split('');
+//     digits.forEach(digit => {sum = sum + parseInt(digit,10)});
+//     return sum;
 // }
-// let hariu = GurvanOrontoiToo(123);
-// console.log(hariu);
+// console.log(sumOfDigits(127));
 
-// "Минут секунд"; ???
+// "Минут секунд"; ??? ------------------------------------
 // function Minut(params) {
 //     let MinSec = (Math.floor(arr/60), arr%60)
 //     return MinSec;

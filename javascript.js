@@ -72,38 +72,45 @@
 // let l= 476
 // console.log(l%10)
 
-// "Аравтын орны цифр";
+// "Аравтын орны цифр"; ???
 // let p= 423
 // let i= p%100-3
 // console.log(i/10)
 
 // "2 оронтой тоо";
-// let w= 27
-// let z= Math.floor(w/10)
-// let m= w%10
-// console.log(z*m)
+// function too(x) {
+//     let urjver = x[0] * x[1];
+//     return urjver;
+// }
+// let hariu = too("27");
+// console.log(hariu);
 
-"3 оронтой тоо";
-let ons= 556
-let o= Math.floor(ons/100)
-let n= (ons%100-3)/10
-let s= ons%10
-console.log(o+n+s)
+// "3 оронтой тоо"; 
+// function GurvanOrontoiToo(x) {
+//     let niilber = x[0] + x[1] + x[2];
+//     return niilber;
+// }
+// let hariu = GurvanOrontoiToo(123);
+// console.log(hariu);
 
-// "Минут секунд";
-// let sec= 200
-// console.log(Math.floor(sec/60), sec%60 )
+// "Минут секунд"; ???
+// function Minut(params) {
+//     let MinSec = (Math.floor(arr/60), arr%60)
+//     return MinSec;
+// }
+// let hariu = Minut(200);
+// console.log(hariu);
 
-// "Цаг минут секунд";
+// "Цаг минут секунд"; ???
 // let mmm= 3612
 // console.log(Math.floor(mmm/60/60), mmm%60-12, mmm%60)
 
-// "Минут секунд -> секунд";
+// "Минут секунд -> секунд"; ???
 // let min2= 3
 // let sec2= 4
 // console.log(min2*60+sec2)
 
-// "Цаг минут секунд -> секунд";
+// "Цаг минут секунд -> секунд"; ???
 // // let hon= 1; 2; 3
 // // console.log(hon*24+hon*60+hon)
 
@@ -111,7 +118,7 @@ console.log(o+n+s)
 // let tsag= 44
 // console.log(Math.floor(tsag/24), tsag%24)
 
-// "Хоног цаг -> цаг";
+// "Хоног цаг -> цаг"; ???
 // let days= 2
 // let hours= 5
 // console.log(days*24+hours)
@@ -120,7 +127,7 @@ console.log(o+n+s)
 // let sar= 27
 // console.log(Math.floor(sar/12), sar%12)
 
-// "Жил сар -> сар";
+// "Жил сар -> сар"; ???
 // let year= 2
 // let month= 7
 
@@ -132,49 +139,52 @@ console.log(o+n+s)
 // 12.04 --- Array ---
 
 // test
-// let age =17
-// if (age >= 18) {
+// function age(params) {
+//     if (age >= 18) {
 //     console.log("tanii nas", age);
 //     console.log("ta nasand hursen baina.");
-// } else {
+//    } else {
 //     console.log("ta huuhdeere baina.");
+//    } 
+//    return age;
 // }
+// let hariu = age(17)
 
 // "Хоёр тооны их";
-// let too1= 16;
-// let too2= 20;
-
-// if (too1>too2) {
-//     console.log(too1, "ih too")
+// function ihToo(params1, params2) {
+// if (params1>params2) {
+//     console.log(params1, "ih too")
 // } else {
-//     console.log(too2, "ih too")
-
+//     console.log(params2, "ih too")
+// }  
 // }
+// let hariu = ihToo(16, 14);
+// console.log(hariu);
 
 // "Хоёр тооны бага";
-// let too1= 9;
-// let too2= 4;
-
-// if (too1>too2) {
-//     console.log(too2, 'baga too')
+// function bagaToo(params1, params2) {
+// if (params1<params2) {
+//     console.log(params1, "baga too")
 // } else {
-//     console.log(too1, 'baga too')
+//     console.log(params2, "baga too")
+// }  
 // }
+// let hariu = bagaToo(9, 4);
+// console.log(hariu);
 
 // "3 тооны их";
-// let too1= 1;
-// let too2= 3;
-// let too3= 9;
-
-// if (too1>too2>too3) {
-//      console.log(too1, "ih too")
-// } else if (too1<too2>too3) {
-//     console.log(too2, "ih too")
-// } else {
-//     console.log(too3, "ih too")
+// function ihToo(too1, too2, too3) {
+//    if (too1>too2>too3) {
+//         console.log(too1, "ih too")
+//    } else if (too1<too2>too3) {
+//        console.log(too2, "ih too")
+//    } else {
+//        console.log(too3, "ih too")
+//    } 
 // }
+// let hariu = ihToo(1, 3, 9)
 
-// "4 тооны бага";
+// "4 тооны бага"; ???
 // let too1= 40;
 // let too2= 10;
 // let too3= 46;
@@ -199,55 +209,50 @@ console.log(o+n+s)
 // }
 
 // "Нийлбэр 80";
-// let too1 = 85;
-// let too2 = 75;
-// let too3 = 96;
-// let too4 = 69;
+// function niilber(too1, too2, too3, too4){
+//     if (too1>80) {
+//         if (too2>80)
+//             console.log(too1+too2);
+//         if (too3>80)
+//             console.log(too1+too3);
+//         if (too4>80)
+//             console.log(too1+too4);
+//     }
+//     if (too2>80) {
+//         if (too3>80)
+//             console.log(too2+too3);
+//         if (too4>80)
+//             console.log(too2+too4);
+//     }
+//     if (too3>80) {
+//         if (too4>80)
+//             console.log(too3+too4);
+//     }
+// }
+// let hariu = niilber(85, 75, 96,69);
 
-// if (too1>80) {
-//     if (too2>80)
-//         console.log(too1+too2);
-//     if (too3>80)
-//         console.log(too1+too3);
-//     if (too4>80)
-//         console.log(too1+too4);
-// }
-// if (too2>80) {
-//     if (too3>80)
-//         console.log(too2+too3);
-//     if (too4>80)
-//         console.log(too2+too4);
-// }
+// "Үржвэр 5" ???
 
-// if (too3>80) {
-//     if (too4>80)
-//         console.log(too3+too4);
+// function urjver(too1, too2, too3, too4) {
+//     if (too1<5){
+//         if (too2<5)
+//             console.log(too1*too2);
+//         if (too3<5)
+//             console.log(too1*too3);
+//         if (too4<5)
+//             console.log(too1*too4);
+//     }
+//     if (too2<5) {
+//         if (too3< 5)
+//             console.log(too2*too3);
+//             console.log(too2*too4);
+//     if (too3<5) {
+//         if (too4<5)
+//             console.log(too3*too4);
+//     }
+//    }
 // }
-
-// "Үржвэр 5";
-// let too1= 3;
-// let too2= 6;
-// let too3= 2;
-// let too4= 4;
-
-// if (too1<5){
-//     if (too2<5)
-//         console.log(too1*too2);
-//     if (too3<5)
-//         console.log(too1*too3);
-//     if (too4<5)
-//         console.log(too1*too4);
-// }
-// if (too2<5) {
-//     if (too3< 5)
-//         console.log(too2*too3);
-//     if (too4<5)
-//         console.log(too2*too4);
-// }
-// if (too3<5) {
-//     if (too4<5)
-//         console.log(too3*too4);
-// }
+// let hariu = urjver(3, 6, 2, 4)
 
 // "Тэнцүү 5";
 // let too1 = 1;
@@ -255,6 +260,7 @@ console.log(o+n+s)
 // let too3 = 5;
 // let TavtaiTesntsuuToo;
 
+// function TavtaiTesntsuuToo(too1, too2, too3) {
 // if(too1==5){
 //     if(too2==5){
 //         if(too3==5){
@@ -291,16 +297,21 @@ console.log(o+n+s)
 //         }
 //     }
 // }
-// console.log(TavtaiTesntsuuToo);
+// console.log(TavtaiTesntsuuToo);    
+// }
+// let hariu = TavtaiTesntsuuToo(1, 5, 5)
 
-// "10-аас их";
-// let too = 11;
-// if(too>10){
-//     console.log("yes");
+// "10-аас их"
+// function aravaasIh(too) {
+//     if(too>10){
+//         console.log("yes");
+//     }
+//     else{
+//         console.log("no");
+//     }   
 // }
-// else{
-//     console.log("no");
-// }
+// let hariu = aravaasIh(11)
+// console.log(hariu);
 
 // "Тэгш тоонууд YES";
 // let too = [3, 4, 5];
@@ -319,11 +330,15 @@ console.log(o+n+s)
 //     console.log('ioi');
 // }
 
-// "IOI n удаа";
-// let n=6;
-// for(let i = 0; i<n; i++){
-//     console.log('ioi');
+// "IOI n удаа"; ???
+// function hevleh(params) {
+//     let n = 6;
+//     for(let i = 0; i<n; i++){
+//     } 
 // }
+// let hariu = hevleh(ioi)
+// console.log(hariu);
+
 
 // "Эхний n тооны нийлбэр";
 // let n= 9;
@@ -569,9 +584,22 @@ console.log(o+n+s)
 //    console.log(bolomj);
 // }
 
-// ----- 12.09 ----- 
 // 1. Davhriin  hed dahi haalga
 // let davharHaalganiiToo = "5 4";
 // let HaalganiiToot = 10;
+
+// function name(params) {
+    
+// }
+
+// function PrimeNumber(n) {
+//     for(let i=2; i<=n/2; i++){
+//         if(n%i==0) return "No";
+//     }
+//     return "Yes";
+// }
+// console.log(PrimeNumber(6));
+
+
 
 

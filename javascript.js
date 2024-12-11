@@ -74,7 +74,7 @@
 
 // "Аравтын орны цифр";
 // function findLastDigit(num) {
-//    let lastDigit = (num % 100 -num % 10)/10
+//    let lastDigit = (num % 100 - num % 10)/10
 //    return lastDigit;
 // }
 // let hariu = findLastDigit(423);
@@ -98,30 +98,44 @@
 // }
 // console.log(sumOfDigits(127));
 
-// "Минут секунд"; ??? ------------------------------------
-// function Minut(params) {
-//     let MinSec = (Math.floor(arr/60), arr%60)
-//     return MinSec;
-// }
-// let hariu = Minut(200);
-// console.log(hariu);
+// "Минут секунд";
+// function changeToMinSec(seconds) {
+//     let min = Math.floor(seconds/60);
+//     let sec = seconds % 60;
+//         return min + " " + sec;
+//     }
+// console.log(changeToMinSec(200));
 
 // "Цаг минут секунд"; ???
-// let mmm= 3612
-// console.log(Math.floor(mmm/60/60), mmm%60-12, mmm%60)
+// function changeToTimeMinSec(seconds) {
+//     let tsag = Math.floor(seconds/60/60);
+//     let min = Math.floor(seconds/60);
+//     let sec = seconds % 60;
+//         return tsag + " " + min + " " + sec;
+// }
+// console.log(changeToTimeMinSec(3612))
 
-// "Минут секунд -> секунд"; ???
-// let min2= 3
-// let sec2= 4
-// console.log(min2*60+sec2)
+// "Минут секунд -> секунд";
+// function changeToSec(min, sec) {
+//     const seconds = min * 60 + sec;
+//     return seconds;
+// }
+// console.log(changeToSec(3, 4));
 
-// "Цаг минут секунд -> секунд"; ???
-// // let hon= 1; 2; 3
-// // console.log(hon*24+hon*60+hon)
+// "Цаг минут секунд -> секунд";
+// function changeToSec(tsag, min, sec) {
+//     let seconds = tsag * 60 * 60 + min * 60 + sec;
+//     return seconds;
+// }
+// console.log(changeToSec(1, 2, 3));
 
 // "Хоног цаг";
-// let tsag= 44
-// console.log(Math.floor(tsag/24), tsag%24)
+// function changeToHonTsag(time) {
+//     let honog = Math.floor(time/24);
+//     let tsag = time%24;
+//     return honog + " " + tsag;
+// }
+// console.log(changeToHonTsag(44));
 
 // "Хоног цаг -> цаг"; ???
 // let days= 2
@@ -604,6 +618,35 @@
 //     return "Yes";
 // }
 // console.log(PrimeNumber(6));
+
+// 12.11 --------
+
+// let fullName = "Bold Bat"; // B. Bat
+// function formatName(name) {
+//     let firstName = name.split(" ")[1];
+//     let lastName = name.split(" ")[0];
+
+//     let firstChar = lastName[0];
+//     return firstChar + ". " + firstName;
+// }
+// console.log(formatName(fullName));
+
+// bold.sh@gmail.com // Sh. Bold
+// let email = "bold.sh@gmail.com";
+// function formatName(name) {
+//     let lastName = name.split(".")[1];
+//     let firstName = name.split(".")[0];
+//     let firstChar1 = firstName.slice(0, 1).toUpperCase();
+//     let secondChar1 = firstName.slice(1);
+//     let firstChar2 = lastName.slice(0, 1).toUpperCase();
+//     let secondChar2 = lastName.slice(1, 2);
+    
+//     return firstChar2 + secondChar2 + ". " + firstChar1 + secondChar1;
+//     // console.log(name);
+// }
+// console.log(formatName(email));
+
+
 
 
 

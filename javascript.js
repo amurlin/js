@@ -137,23 +137,28 @@
 // }
 // console.log(changeToHonTsag(44));
 
-// "Хоног цаг -> цаг"; ???
-// let days= 2
-// let hours= 5
-// console.log(days*24+hours)
+// "Хоног цаг -> цаг";
+// function changeToTime(hon, tsag) {
+//     return time = hon * 24 + tsag;
+// }
+// console.log(changeToTime(2, 5))
 
 // "Жил сар";
-// let sar= 27
-// console.log(Math.floor(sar/12), sar%12)
+// function changeToJilSar(month) {
+//     let jil = Math.floor(month/12);
+//     let sar = month%12;
+//     return JilSar = jil + " " + sar;
+// }
+// console.log(changeToJilSar(27));
 
-// "Жил сар -> сар"; ???
-// let year= 2
-// let month= 7
+// "Жил сар -> сар"; 
+// function changeToSar(year, month) {
+//     return sar = year * 12 + month;
+// }
+// console.log(changeToSar(2, 7));
 
 // let test = 2^5
 // console.log(test);
-
-// console.log(2*12+7)
 
 // 12.04 --- Array ---
 
@@ -248,30 +253,34 @@
 //             console.log(too3+too4);
 //     }
 // }
-// let hariu = niilber(85, 75, 96,69);
+// console.log(niilber(85, 75, 96,69));
 
 // "Үржвэр 5" ???
-
 // function urjver(too1, too2, too3, too4) {
 //     if (too1<5){
-//         if (too2<5)
+//         if (too2<5){
 //             console.log(too1*too2);
-//         if (too3<5)
+//         }
+//         if (too3<5){
 //             console.log(too1*too3);
-//         if (too4<5)
+//         }
+//         if (too4<5){
 //             console.log(too1*too4);
+//         }
 //     }
 //     if (too2<5) {
-//         if (too3< 5)
+//         if (too3< 5) {
 //             console.log(too2*too3);
 //             console.log(too2*too4);
-//     if (too3<5) {
-//         if (too4<5)
-//             console.log(too3*too4);
+//         }
 //     }
-//    }
+//     if (too3<5) {
+//         if (too4<5){
+//             console.log(too3*too4); 
+//         }
+//     }
 // }
-// let hariu = urjver(3, 6, 2, 4)
+// console.log(urjver(3, 6, 2, 4))
 
 // "Тэнцүү 5";
 // let too1 = 1;

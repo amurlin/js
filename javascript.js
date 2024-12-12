@@ -1,4 +1,4 @@
-// 12.03  ---
+// SPOJ huudas 1 ---
 
 // "Гурвалжин";
 // function perimeter(a, b, c) {
@@ -160,8 +160,6 @@
 // let test = 2^5
 // console.log(test);
 
-// 12.04 --- Array ---
-
 // test
 // function age(params) {
 //     if (age >= 18) {
@@ -208,126 +206,95 @@
 // }
 // let hariu = ihToo(1, 3, 9)
 
-// "4 тооны бага"; ???
-// let too1= 40;
-// let too2= 10;
-// let too3= 46;
-// let too4= 50;
-
-// if (too1<too2) {
-//     if (too1<too3);
-//     if (too1<too4)
-//         console.log(too1, 'baga too');
-// } if (too1>too2) {
-//     if (too2<too3);
-//     if (too2<too4)
-//         console.log(too2, 'baga too');
-// } if (too2>too3) {
-//     if (too1>too3);
-//     if (too3<too4)
-//         console.log(too3, 'baga too');
-// } if (too2<too3) {
-//     if (too1>too4);
-//     if (too3>too4)
-//         console.log(too4, 'baga too');
+// "4 тооны бага"; //shine ym olov: Math.min-eer minimum toog oloh bolomjtoi.
+// function bagaTooOloh(too1, too2, too3, too4) {
+//     return bagaToo = Math.min(too1, too2, too3, too4);
 // }
+// let hariu = bagaTooOloh(3, 1, 4, 2);
+// console.log("Hamgiin baga too: ", hariu);
 
 // "Нийлбэр 80";
-// function niilber(too1, too2, too3, too4){
-//     if (too1>80) {
-//         if (too2>80)
-//             console.log(too1+too2);
-//         if (too3>80)
-//             console.log(too1+too3);
-//         if (too4>80)
-//             console.log(too1+too4);
-//     }
-//     if (too2>80) {
-//         if (too3>80)
-//             console.log(too2+too3);
-//         if (too4>80)
-//             console.log(too2+too4);
-//     }
-//     if (too3>80) {
-//         if (too4>80)
-//             console.log(too3+too4);
-//     }
+// function nayaasIhToonuudiinNiilber(too) {
+//     let nayaasIhToo = too.filter((num) => num > 80 );
+//     return niilber = nayaasIhToo.reduce((total, current) => total + current, 0);
 // }
-// console.log(niilber(85, 75, 96,69));
+// console.log(nayaasIhToonuudiinNiilber([85, 75, 96, 69]));
 
-// "Үржвэр 5" ???
-// function urjver(too1, too2, too3, too4) {
-//     if (too1<5){
-//         if (too2<5){
-//             console.log(too1*too2);
-//         }
-//         if (too3<5){
-//             console.log(too1*too3);
-//         }
-//         if (too4<5){
-//             console.log(too1*too4);
-//         }
-//     }
-//     if (too2<5) {
-//         if (too3< 5) {
-//             console.log(too2*too3);
-//             console.log(too2*too4);
-//         }
-//     }
-//     if (too3<5) {
-//         if (too4<5){
-//             console.log(too3*too4); 
-//         }
-//     }
+// "Үржвэр 5"
+// function urjver(too) {
+//     let tavaasIhToo = too.filter((num) => num < 5);
+//     return urj = tavaasIhToo.reduce((total, current) => total * current);
 // }
-// console.log(urjver(3, 6, 2, 4))
+// console.log(urjver([3, 6, 2, 4]));
+
+// "Тэгш тоонуудын нийлбэр"
+// function sumOfEvenNumbers(numbers) {
+//     let evenNumbers = numbers.filter((num) => num % 2 === 0);
+//     return sum = evenNumbers.reduce((total, current) => total + current, 0);
+// }
+// console.log(sumOfEvenNumbers([10, 3, 5]));
+
+// "Сондгой тоонуудын үржвэр"
+// function multiplyOddNumbers(numbers) {
+//     let oddNumbers = numbers.filter((num) => num % 2 !== 0);
+//     return multiply = oddNumbers.reduce((total, current) => total * current);
+// }
+// console.log(multiplyOddNumbers([5, 2, 3]));
 
 // "Тэнцүү 5";
-// let too1 = 1;
-// let too2 = 5;
-// let too3 = 5;
-// let TavtaiTesntsuuToo;
-
 // function TavtaiTesntsuuToo(too1, too2, too3) {
+// let TavtaiTesntsuuToo;
 // if(too1==5){
 //     if(too2==5){
-//         if(too3==5){
+//         if(too3==5)
 //             TavtaiTesntsuuToo='3'
-//         }
-//         if(too3!=5){
+//         if(too3!=5)
 //            TavtaiTesntsuuToo='2'
-//         }
 //     }
 //     if(too2!=5){
-//         if(too3==5){
+//         if(too3==5)
 //             TavtaiTesntsuuToo='2'
-//         }
-//         if(too3!=5){
+//         if(too3!=5)
 //             TavtaiTesntsuuToo='1'
-//         }
 //     }
 // }
 // else if(too1!=5){
 //     if(too2==5){
-//         if(too3==5){
+//         if(too3==5)
 //             TavtaiTesntsuuToo='2'
-//         }
-//         if(too3!=5){
+//         if(too3!=5)
 //            TavtaiTesntsuuToo='1'
-//         }
 //     }
 //     if(too2!=5){
-//         if(too3==5){
+//         if(too3==5)
 //             TavtaiTesntsuuToo='1'
-//         }
-//         if(too3!=5){
+//         if(too3!=5)
 //             TavtaiTesntsuuToo='0'
-//         }
 //     }
 // }
 // console.log(TavtaiTesntsuuToo);    
 // }
 // let hariu = TavtaiTesntsuuToo(1, 5, 5)
+
+// function tavtaiTentsuuToo(too) {
+//     let tavtaiTentsuu = too.filter((num) => num == 5);
+//     return hedVe = tavtaiTentsuu.length;
+// }
+// console.log(tavtaiTentsuuToo([1, 5, 5]));
+
+// "3-д хуваагдах"
+// function guravdHuvaagdah(too) {
+//     let huvaagdahToo = too.filter((num) => num % 3 === 0);
+//     return hedVe = huvaagdahToo.length;
+// }
+// console.log(guravdHuvaagdah([3, 12, 8, 9]));
+
+// "11-д хуваагддаггүй"
+// function huvaagddagguiTooniiNiilber(too) {
+//     let arvannegdHuvaagdahgui = too.filter((num) => num % 11 !== 0);
+//     return niilber = arvannegdHuvaagdahgui.reduce((total, current) => total + current);
+// }
+// console.log(huvaagddagguiTooniiNiilber([7, 22, 13, 30]));
 
 // "10-аас их"
 // function aravaasIh(too) {
@@ -343,7 +310,6 @@
 
 // "Тэгш тоонууд YES";
 // let too = [3, 4, 5];
-
 // for(let i = 0; i< too.length; i++){
 //     if(too[i]%2==0){
 //         console.log("yes");
@@ -359,17 +325,13 @@
 // }
 
 // "IOI n удаа"; ???
-// function hevleh(params) {
-//     let n = 6;
-//     for(let i = 0; i<n; i++){
-//     } 
-// }
-// let hariu = hevleh(ioi)
-// console.log(hariu);
-
+// let n = 6;
+// for(let i = 0; i<n; i++){
+//     console.log('ioi');
+// } 
 
 // "Эхний n тооны нийлбэр";
-// let n= 9;
+// let n= 5;
 // let niilber=0;
 // for(let i=1; i<=n; i++){
 //     niilber = niilber + i
@@ -425,12 +387,20 @@
 
 // "Тэнцсэн, унасан";
 // let too = 4;
-
 // if (too>3) {
 //     console.log('tentssen');
 // }
 // else { console.log('unasan');
 // }
+
+// function passOrFail(number) {
+//     if (number > 3) {
+//         return result = 'tentssen';
+//     } else {
+//         return result = 'unasan';
+//     }
+// }
+// console.log(passOrFail(4));
 
 // "5-аас онц руу";
 // let dun=4;
@@ -452,9 +422,11 @@
 // }
 
 // "Тоон үнэлгээнээс үсгэнд"
-// let dun=89;
-
-// if (dun>89) {
+// let dun=90;
+// if (dun>100) {
+//     console.log(undefined);
+// }
+// else if (dun>89) {
 //     console.log('A');
 // }
 // else if (dun>79) {
@@ -524,30 +496,34 @@
 // "Гурвалжин эсэх" "???"
 // let a = 2;
 // let b = 3;
-// let c = 40;
+// let c = 4;
 
-// if (a<b+c || c<a+b || b<c+a){
+// if (a<b+c && c<a+b && b<c+a){
 //     console.log("Yes");
 // }
 // else {
 //     console.log("No");
 // }
 
-// "Тооны хүрд"
-// let too = 9;
+// "Тооны хүрд" //shine ym olov: ${} тэмдэглэгээг ашиглан хувьсагчдын утгыг мөрөнд оруулах боломжийг олгодог. Template Literals нь backtick (`) тэмдэглэгээгээр хүрээлэгдсэн байдаг.
+// let too = 3;
 // let hurd = 10;
 // let urjver;
 //  for (let index = 1; index <= hurd; index++) {
-//     console.log(urjver=too*index);
-//  }
+//     // console.log(urjver=too*index);
+//     urjver = too * index;
+//     console.log(`${too} * ${index} = ${urjver}`);
+// }
 
 // "Тооны зэргийн хүрд"
 // let too = 3;
-// let hurd = 5;
-// let urjver;
-//  for (let index = 1; index <= hurd; index++) {
-//     console.log(urjver=too**index);
-//  }
+// let zereg = 5;
+// let hurd;
+// for (let index = 1; index <= zereg; index++) {
+//     // console.log(hurd=too**index);
+//     hurd = too ** index;
+//     console.log(`${too} ^ ${index} = ${hurd}`);
+// }
 
 // "Илэрхийлэл 1"
 // let too = [2, 3, 4];
